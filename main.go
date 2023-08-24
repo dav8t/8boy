@@ -11,4 +11,8 @@ func start() {
 		startCPUProfiling()
 		defer pprof.StopCPUProfile()
 	}
+
+	if *unlocked {
+		*mute = mute
+	}
 }
