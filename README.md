@@ -1,2 +1,2 @@
-# 8boy 👾🕹️
+# 8boy 👾
 source: https://github.com/Humpheh/goboy 
