@@ -41,3 +41,15 @@ func getROM() string {
 	}
 	return rom
 }
+
+func startCPUProfiling() {
+	log.print("Starting CPU profile...")
+	f, err := os.Create(*cpuprofile)
+	if err != nil {
+		log.Fatalf("failed to create CPU profile: %v", err)
+	}
+	err = pprof.StartCPUProfile(f)
+	if err != nil {
+		log.Fatalf("Failed to start CPU profile: %v", err)
+	}
+}
