@@ -8,5 +8,9 @@ func Set{}
 
 func Reset{}
 
+func HalfCarryAdd{}
+
+func B
+
 
 
